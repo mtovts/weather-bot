@@ -119,7 +119,7 @@ def parse_forecast(resp: Dict) -> Tuple or None:
 
                 if 2 <= weather_id <= 5:  # 2-5 codes means precipitation
                     precipitation = True
-                logger.info(f'{weather_id} {precipitation}')
+                logger.debug(f'{weather_id} {precipitation}')
             else:  # if next day - break
                 break
 
